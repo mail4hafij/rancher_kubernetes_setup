@@ -24,7 +24,9 @@ sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 ran
 
 
 ### How to connect Rancher cluster from local Kubectl client.
-Download the KubeConfig yaml file. There are usually 3 ways we can connect to different clusters.
+Assuming you already have the Kubectl client. If not download it from here https://kubernetes.io/docs/tasks/tools/
+
+Download the KubeConfig yaml file from Rancher. There are usually 3 ways we can connect to different clusters.
 
 Option 1: Using the kubeconfig on every command
 ```
