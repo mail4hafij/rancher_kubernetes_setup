@@ -32,7 +32,7 @@ Option 1: Using the kubeconfig on every command
 ```
 kubectl get nodes --kubeconfig={LOCATION TO KUBECONFIG.yaml}
 ```
-Option 2: Using environment variable
+Option 2: Using environment variable. Set environment variable KUBECONFIG with the location to kubeconfig file.
 
 Option 3: Merging multiple kubeconfig files
 
