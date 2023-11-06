@@ -1,6 +1,7 @@
 # Rancher Kubernetes Setup
-Rancher is a Kubernetes management tool to deploy and run clusters anywhere and on any provider. Here we setup Rancher on a Linux virutal machine. Assuming we have SSH access to the VM.
+Rancher is a Kubernetes management tool to deploy and run clusters anywhere and on any provider. Here we setup Rancher on a Linux virutal machine. 
 
+Assuming we have SSH access to the VM.
 1. Login with ssh to the VM. Install curl
 ```
 sudo apt install curl
@@ -18,8 +19,8 @@ sudo usermod -aG docker $USER && newgrp docker
 sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
 ```
 5. Open a browser and browse to your VM ip address. Ignore ssl warning.
-6. The login setup require us to know the containerId of the rancher that is running on docker in the VM. Then run the command (with the containerId replaced) which will give us a bootstrap password. 
-7. Enter the bootstrap password and choose your own.
+6. The login setup require us to know the containerId of the rancher that is running on the docker. Then run the command (with the containerId replaced) shown in the login setup, which will give us a bootstrap password. 
+7. Enter the bootstrap password. After login you can choose your own password.
 
 
 ### How to connect Rancher cluster from local Kubectl client.
