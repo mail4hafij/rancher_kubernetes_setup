@@ -38,6 +38,8 @@ Option 3: Merging multiple kubeconfig files
 
 For more check out the link https://dbafromthecold.com/2020/02/21/merge-kubectl-config-files-on-windows/
 
+To list all the context ```kubectl config get-contexts```
+
 ENJOY!
 
 
